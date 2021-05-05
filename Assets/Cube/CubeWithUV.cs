@@ -18,7 +18,7 @@ namespace CubeTest
             // 使用一个默认材质
             //var mat = new Material(Shader.Find("Standard")) { name = "Default-Material" };
             //GetComponent<MeshRenderer>().material = mat;
-            GetComponent<MeshRenderer>().material = Resources.Load<Material>("New Material");
+            GetComponent<MeshRenderer>().material = Resources.Load<Material>("CubeMat");
         }
 
         // 创建三角形
@@ -47,7 +47,7 @@ namespace CubeTest
         // 而一个cube需要6个面都贴上纹理, 那么应该需要顶点坐标共: 4x6个顶点 (一个面4个顶点,共6个面)
         void GenerateVectices()
         {
-            vertices = new Vector3[8];
+            //vertices = new Vector3[8];
             // 以左下角的顶点为原点
             var dot1 = new Vector3(0, 0, 0);
             var dot2 = new Vector3(1, 0, 0);
